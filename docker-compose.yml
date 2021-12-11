@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
   node-api:
@@ -11,5 +11,6 @@ services:
       - .:/app
     environment:
       - NODE_ENV=dev
+      - PORT=3000
 
     

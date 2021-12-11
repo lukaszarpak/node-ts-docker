@@ -7,10 +7,8 @@ import dotenv from "dotenv";
 const envPath = process.env?.NODE_ENV || "dev";
 dotenv.config({ path: `.env.${envPath}` });
 
-console.log("test", process.env.test);
-
 const app: Application = express();
-const port = 3000;
+const port = process.env?.PORT?.toString() || 3000;
 
 app.get("/", defaultController);
 
