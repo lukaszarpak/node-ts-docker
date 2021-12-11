@@ -1,4 +1,4 @@
-## Node | TS | Docker
+## Node | TS | Docker - starter project
 
 A starter Node.js project with TypeScript. Run in Docker container.
 
@@ -21,4 +21,9 @@ See the logs of the chosen container:
 
 ```
 $ docker logs --follow CONTAINER_ID
+```
+Get access to the container's shell
+
+```
+$ docker exec -it CONTAINER_ID bash
 ```
