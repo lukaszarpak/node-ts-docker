@@ -1,7 +1,7 @@
 {
-  "name": "nodemysql",
+  "name": "node-ts-docker-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A starter Node.js project with TypeScript. Run in Docker container.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
@@ -9,7 +9,7 @@
     "start": "NODE_PATH=./dist NODE_ENV=prod NODE_PORT=3000 node dist/index.js",
     "lint": "eslint . --ext .ts"
   },
-  "author": "",
+  "author": "lukaszarpak",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
